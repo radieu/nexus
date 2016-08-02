@@ -12,7 +12,7 @@ nexusModule.directive('gnmenu', function($parse, $rootScope, $compile) {
       _openMenu,
       _closeMenu,
       _setMenuElement;
-  
+  var click = 0;
   _init = function() {
     trigger = el.querySelector('a.gn-icon-menu');
     menu = el.querySelector('nav.gn-menu-wrapper');
@@ -23,6 +23,20 @@ nexusModule.directive('gnmenu', function($parse, $rootScope, $compile) {
   _initEvents = function() {
     trigger.addEventListener( 'mouseover', function(ev) { _openIconMenu(); } );
     trigger.addEventListener( 'mouseout', function(ev) { _closeIconMenu(); } );
+    trigger.addEventListener( 'click', function(ev) {
+    	
+    	if (click == 0) {
+    		_openMenu();
+    		click = 1;
+    	}
+
+    	else{
+    		_closeMenu();
+    		_openIconMenu();
+    		click = 0;
+    	}
+    	
+    });
     menu.addEventListener('mouseover', function(ev) {
       _openMenu();
       console.log("add click to close");

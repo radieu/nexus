@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower' ]
+2 info using npm@3.8.6
+3 info using node@v6.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData bower
+8 silly fetchNamedPackageData bower
+9 silly mapToRegistry name bower
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bower',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'bower',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bower
+14 verbose request uri https://registry.npmjs.org/bower
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:23:41 AM
+17 verbose request id 58b30aca44162fb8
+18 verbose etag "EULNNYOSH1A536K87PYZOZ5CW"
+19 http request GET https://registry.npmjs.org/bower
+20 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+21 info attempt registry request try #2 at 9:39:32 AM
+22 verbose etag "EULNNYOSH1A536K87PYZOZ5CW"
+23 http request GET https://registry.npmjs.org/bower
+24 http 304 https://registry.npmjs.org/bower
+25 verbose headers { date: 'Mon, 01 Aug 2016 08:39:37 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"EULNNYOSH1A536K87PYZOZ5CW"',
+25 verbose headers   age: '35',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1470040777.287365,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Mon, 01 Aug 2016 08:39:37 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"EULNNYOSH1A536K87PYZOZ5CW"',
+26 silly get     age: '35',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-lcy1133-LCY',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1470040777.287365,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/bower from cache
+28 verbose get saving bower to /home/zangue/.npm/registry.npmjs.org/bower/.cache.json
+29 verbose correctMkdir /home/zangue/.npm correctMkdir not in flight; initializing
+30 silly install normalizeTree
+31 silly loadCurrentTree Finishing
+32 silly loadIdealTree Starting
+33 silly install loadIdealTree
+34 silly cloneCurrentTree Starting
+35 silly install cloneCurrentTreeToIdealTree
+36 silly cloneCurrentTree Finishing
+37 silly loadShrinkwrap Starting
+38 silly install loadShrinkwrap
+39 silly loadShrinkwrap Finishing
+40 silly loadAllDepsIntoIdealTree Starting
+41 silly install loadAllDepsIntoIdealTree
+42 silly resolveWithNewModule bower@1.7.9 checking installable status
+43 silly cache add args [ 'bower', null ]
+44 verbose cache add spec bower
+45 silly cache add parsed spec Result {
+45 silly cache add   raw: 'bower',
+45 silly cache add   scope: null,
+45 silly cache add   name: 'bower',
+45 silly cache add   rawSpec: '',
+45 silly cache add   spec: 'latest',
+45 silly cache add   type: 'tag' }
+46 silly addNamed bower@latest
+47 verbose addNamed "latest" is being treated as a dist-tag for bower
+48 info addNameTag [ 'bower', 'latest' ]
+49 silly mapToRegistry name bower
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry data Result {
+52 silly mapToRegistry   raw: 'bower',
+52 silly mapToRegistry   scope: null,
+52 silly mapToRegistry   name: 'bower',
+52 silly mapToRegistry   rawSpec: '',
+52 silly mapToRegistry   spec: 'latest',
+52 silly mapToRegistry   type: 'tag' }
+53 silly mapToRegistry uri https://registry.npmjs.org/bower
+54 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
+55 verbose get https://registry.npmjs.org/bower not expired, no request
+56 silly addNameTag next cb for bower with tag latest
+57 silly addNamed bower@1.7.9
+58 verbose addNamed "1.7.9" is a plain semver version for bower
+59 silly cache afterAdd bower@1.7.9
+60 verbose afterAdd /home/zangue/.npm/bower/1.7.9/package/package.json not in flight; writing
+61 verbose correctMkdir /home/zangue/.npm correctMkdir not in flight; initializing
+62 verbose afterAdd /home/zangue/.npm/bower/1.7.9/package/package.json written
+63 silly loadAllDepsIntoIdealTree Finishing
+64 silly idealTree:prePrune lib
+64 silly idealTree:prePrune └── bower@1.7.9
+65 silly loadIdealTree Finishing
+66 silly currentTree lib
+66 silly currentTree └── bower@1.7.9
+67 silly idealTree lib
+67 silly idealTree └── bower@1.7.9
+68 silly generateActionsToTake Starting
+69 silly install generateActionsToTake
+70 warn checkPermissions Missing write access to /usr/local/lib/node_modules/bower
+71 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+72 silly rollbackFailedOptional Starting
+73 silly rollbackFailedOptional Finishing
+74 silly runTopLevelLifecycles Starting
+75 silly runTopLevelLifecycles Finishing
+76 silly install printInstalled
+77 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
+77 verbose stack     at Error (native)
+78 verbose cwd /home/zangue/Desktop/NexusMenu
+79 error Linux 3.13.0-39-generic
+80 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bower"
+81 error node v6.0.0
+82 error npm  v3.8.6
+83 error path /usr/local/lib/node_modules/bower
+84 error code EACCES
+85 error errno -13
+86 error syscall access
+87 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
+87 error     at Error (native)
+87 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
+87 error     at Error (native)
+87 error   errno: -13,
+87 error   code: 'EACCES',
+87 error   syscall: 'access',
+87 error   path: '/usr/local/lib/node_modules/bower' }
+88 error Please try running this command again as root/Administrator.
+89 verbose exit [ -13, true ]
